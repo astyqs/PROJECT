@@ -18,7 +18,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #610154;
+    background-color: #2C2C2C;
     color: white;
     padding: 20px 10px; 
     text-align: center;
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #770267;
+    background-color: #494747;
 }
 
 /* Main Content Styling */
@@ -97,12 +97,12 @@ form button {
 form input:focus,
 form select:focus,
 form textarea:focus {
-    border-color: #770267;
+    border-color: #2C2C2C;
     outline: none;
 }
 
 form button {
-    background-color: #770267;
+    background-color: #2C2C2C;
     color: white;
     font-weight: bold;
     border: none;
@@ -111,7 +111,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #770267;
+    background-color: #2C2C2C;
 }
 
 /* Character Cards */
@@ -125,14 +125,14 @@ form button:hover {
 }
 
 .character-card h3 {
-    color: #830171;
+    color: #2C2C2C;
     margin-bottom: 10px;
 }
 
 /* Buttons */
 button {
     cursor: pointer;
-    background: linear-gradient(135deg, #610154, #610154);
+    background: linear-gradient(135deg, #2C2C2C, #2C2C2C);
     border: none;
     border-radius: 12px;
     color: white;
@@ -148,7 +148,7 @@ button {
 
 /* Footer Styling */
 footer {
-    background-color: #610154;
+    background-color: #2C2C2C;
     color: white;
     text-align: center;
     padding: 15px 10px;
