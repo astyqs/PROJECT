@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharacterForge - Генератор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CharacterForge - Генератор персонажей</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="generator.html">Генератор</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="login.html">Логин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="names.html">База имен</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Создание персонажа</h2>
+            <form id="characterForm">
+                <label>Имя персонажа:
+                    <input type="text" id="name" placeholder="Введите имя">
+                </label>
+                <label>Пол:
+                    <select id="gender">
+                        <option value="мужской">Мужской</option>
+                        <option value="женский">Женский</option>
+                        <option value="другой">Другой</option>
+                    </select>
+                </label>
+                <label>Цвет волос:
+                    <input type="text" id="hair" placeholder="Цвет волос">
+                </label>
+                <label>Цвет глаз:
+                    <input type="text" id="eyes" placeholder="Цвет глаз">
+                </label>
+                <label>Рост:
+                    <input type="text" id="height" placeholder="Рост">
+                </label>
+                <label>Личностные качества:
+                    <select id="personality">
+                        <option value="смелый">Смелый</option>
+                        <option value="добрый">Добрый</option>
+                        <option value="хитрый">Хитрый</option>
+                    </select>
+                </label>
+                <label>Суперспособности/Профессия:
+                    <input type="text" id="profession" placeholder="Профессия">
+                </label>
+                <label>Краткая предыстория:
+                    <textarea id="backstory" placeholder="Введите предысторию"></textarea>
+                </label>
+                <button type="button" onclick="generateCharacter()">Сгенерировать</button>
+                <button type="button" onclick="saveCharacter()">Сохранить</button>
+            </form>
+            <section id="generatedCharacter"></section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CharacterForge</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

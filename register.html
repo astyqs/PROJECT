@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharacterForge - Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CharacterForge - Регистрация</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="generator.html">Генератор</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="login.html">Логин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="names.html">База имен</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <label>Имя:
+                    <input type="text" id="registerName" placeholder="Введите ваше имя" required>
+                </label>
+                <label>Email:
+                    <input type="email" id="registerEmail" placeholder="Введите ваш email" required>
+                </label>
+                <label>Пароль:
+                    <input type="password" id="registerPassword" placeholder="Введите пароль" required>
+                </label>
+                <label>Подтверждение пароля:
+                    <input type="password" id="confirmPassword" placeholder="Повторите пароль" required>
+                </label>
+                <label>
+                    <input type="checkbox" id="terms" required> Я принимаю условия использования
+                </label>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CharacterForge</p>
+    </footer>
+    <script>
+        // Проверка совпадения паролей
+        document.getElementById('registerForm').addEventListener('submit', (e) => {
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert('Пароли не совпадают!');
+            }
+        });
+    </script>
+</body>
+</html>
